@@ -1,4 +1,5 @@
 # lol-neural-net
-A fully trained neural network that predicts League of Legends game outcomes with 80% accuracy
-Yes
-No
+This repository contains the tools to build and save a neural network that can predict win/loss outcomes for the popular game Legue of Legends with roughly 80% accuracy, as well as a script that allows users to give inputs and make their own predictions.
+
+## Data
+The data folder contains two files: Champion_Info (Masters+).csv and Games.csv. The first file contains the most recent information on every champion in the game, their made up ID, and their win rates on each possible role (Top, Jungle, Mid, ADC, Support). An X means we have not seen a certain champion play in that role recently. This file should be modified as the game meta changes. The second file contains the training and testing data for the neural network. Each entry in the file cotains information on the 10 players in the game, including the champion the player is using and the player's win rate on that champion. These entries will be modified and reconstructed before being sent to the network for training and testing.
